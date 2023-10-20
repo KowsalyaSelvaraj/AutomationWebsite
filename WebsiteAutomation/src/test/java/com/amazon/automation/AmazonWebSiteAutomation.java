@@ -19,7 +19,6 @@ public class AmazonWebSiteAutomation {
 		//System.setProperty("webdriver.chrome.driver", "C:\\Users\\kowsalyas\\Drivers\\chromedriver.exe");
 		WebDriver driver = new FirefoxDriver();
 		
-
 		driver.navigate().to("https://demoqa.com/");
 
 		String titleString = driver.getTitle();
