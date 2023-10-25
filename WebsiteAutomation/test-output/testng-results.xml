@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results skipped="0" failed="0" ignored="8" total="9" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-05T18:17:20 IST" name="Default suite" finished-at="2023-10-05T18:17:54 IST" duration-ms="34435">
+  <suite name="Default suite" duration-ms="16454" started-at="2023-10-06T20:53:00 IST" finished-at="2023-10-06T20:53:17 IST">
     <groups>
     </groups>
-    <test started-at="2023-10-05T18:17:20 IST" name="Default test" finished-at="2023-10-05T18:17:54 IST" duration-ms="34435">
+    <test name="Default test" duration-ms="16454" started-at="2023-10-06T20:53:00 IST" finished-at="2023-10-06T20:53:17 IST">
       <class name="com.amazon.automation.AmazonWebSiteAutomation">
-        <test-method signature="runTest()[pri:0, instance:com.amazon.automation.AmazonWebSiteAutomation@661972b0]" started-at="2023-10-05T18:17:20 IST" name="runTest" finished-at="2023-10-05T18:17:54 IST" duration-ms="34312" status="PASS">
+        <test-method status="PASS" signature="setUpDriver()[pri:0, instance:com.amazon.automation.AmazonWebSiteAutomation@42607a4f]" name="setUpDriver" is-config="true" duration-ms="14777" started-at="2023-10-06T20:53:00 IST" finished-at="2023-10-06T20:53:15 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runTest -->
+        </test-method> <!-- setUpDriver -->
+        <test-method status="PASS" signature="relativeLocatorsSelenium4()[pri:0, instance:com.amazon.automation.AmazonWebSiteAutomation@42607a4f]" name="relativeLocatorsSelenium4" duration-ms="1621" started-at="2023-10-06T20:53:15 IST" finished-at="2023-10-06T20:53:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- relativeLocatorsSelenium4 -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.amazon.automation.AmazonWebSiteAutomation@42607a4f]" name="closeDriver" is-config="true" duration-ms="1" started-at="2023-10-06T20:53:17 IST" finished-at="2023-10-06T20:53:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
       </class> <!-- com.amazon.automation.AmazonWebSiteAutomation -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
