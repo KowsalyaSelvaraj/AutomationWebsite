@@ -192,6 +192,7 @@ public class AmazonWebSiteAutomation {
 
 			action.click(driver.findElement(By.xpath("//button[text()='Click Me']"))).build().perform();
 
+		
 			List<WebElement> resultElements =	driver.findElements(By.xpath("//button[@id='3TPb8']//following::p"));
 			for(WebElement element : resultElements) {
 				System.out.println(element.getText());
@@ -322,6 +323,7 @@ public class AmazonWebSiteAutomation {
 		WebElement element = driver.findElement(By.id("lastName"));
 		
 		WebElement element2 = driver.findElement(RelativeLocator.with(By.id("userEmail")).below(element));
+		
 		
 	//	RelativeLocator.with(By.tagName("input")).above(By.id("password"));
 		
