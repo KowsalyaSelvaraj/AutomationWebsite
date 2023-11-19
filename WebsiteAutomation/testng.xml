@@ -1,12 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
+	
+	<groups>
+		<run>
+			<include name = "Regression Test"/>
+		</run>
+	</groups>
+	<test thread-count="5" name="Test" parallel = "methods">
+		<classes>
+			<class name="check.testng.order.TestClass1"/>
+		</classes>
+	</test>
+	
+	<test thread-count="5" name="Test1">
+		
+		<classes>
+			
+			<class name="check.testng.order.TestClass2"/>
+		</classes>
+	</test>
+	
+	<test thread-count="5" name="Test2">
+		<classes>
+			<class name="check.testng.order.TestClass3"/>
+		</classes>
+	</test>
+	
+	
+</suite>
 
-<test thread-count="5" name="Test">
-    <classes>
-      <class name="com.amazon.automation.AmazonWebSiteAutomation"/>
-    </classes>
-  </test> 
-  
-  
-</suite> <!--Suite -->
+<!--Suite -->

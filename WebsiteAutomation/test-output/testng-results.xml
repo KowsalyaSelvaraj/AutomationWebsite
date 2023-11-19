@@ -1,25 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="8" total="9" passed="1">
+<testng-results skipped="0" failed="0" ignored="3" total="6" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16454" started-at="2023-10-06T20:53:00 IST" finished-at="2023-10-06T20:53:17 IST">
+  <suite name="Suite" duration-ms="225" started-at="2023-11-06T10:03:04 IST" finished-at="2023-11-06T10:03:04 IST">
     <groups>
+      <group name="Regression Test">
+        <method signature="TestClass1.Test1()[pri:0, instance:check.testng.order.TestClass1@23d2a7e8]" name="Test1" class="check.testng.order.TestClass1"/>
+        <method signature="TestClass2.Test1()[pri:0, instance:check.testng.order.TestClass2@612fc6eb]" name="Test1" class="check.testng.order.TestClass2"/>
+        <method signature="TestClass3.Test1()[pri:0, instance:check.testng.order.TestClass3@6a1aab78]" name="Test1" class="check.testng.order.TestClass3"/>
+      </group> <!-- Regression Test -->
+      <group name="Smoke Test">
+        <method signature="TestClass1.Test1()[pri:0, instance:check.testng.order.TestClass1@23d2a7e8]" name="Test1" class="check.testng.order.TestClass1"/>
+        <method signature="TestClass2.Test1()[pri:0, instance:check.testng.order.TestClass2@612fc6eb]" name="Test1" class="check.testng.order.TestClass2"/>
+        <method signature="TestClass3.Test1()[pri:0, instance:check.testng.order.TestClass3@6a1aab78]" name="Test1" class="check.testng.order.TestClass3"/>
+      </group> <!-- Smoke Test -->
     </groups>
-    <test name="Default test" duration-ms="16454" started-at="2023-10-06T20:53:00 IST" finished-at="2023-10-06T20:53:17 IST">
-      <class name="com.amazon.automation.AmazonWebSiteAutomation">
-        <test-method status="PASS" signature="setUpDriver()[pri:0, instance:com.amazon.automation.AmazonWebSiteAutomation@42607a4f]" name="setUpDriver" is-config="true" duration-ms="14777" started-at="2023-10-06T20:53:00 IST" finished-at="2023-10-06T20:53:15 IST">
+    <test name="Test" duration-ms="84" started-at="2023-11-06T10:03:04 IST" finished-at="2023-11-06T10:03:04 IST">
+      <class name="check.testng.order.TestClass1">
+        <test-method status="PASS" signature="Test1()[pri:0, instance:check.testng.order.TestClass1@23d2a7e8]" name="Test1" duration-ms="12" started-at="2023-11-06T10:03:04 IST" finished-at="2023-11-06T10:03:04 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpDriver -->
-        <test-method status="PASS" signature="relativeLocatorsSelenium4()[pri:0, instance:com.amazon.automation.AmazonWebSiteAutomation@42607a4f]" name="relativeLocatorsSelenium4" duration-ms="1621" started-at="2023-10-06T20:53:15 IST" finished-at="2023-10-06T20:53:17 IST">
+        </test-method> <!-- Test1 -->
+      </class> <!-- check.testng.order.TestClass1 -->
+    </test> <!-- Test -->
+    <test name="Test1" duration-ms="13" started-at="2023-11-06T10:03:04 IST" finished-at="2023-11-06T10:03:04 IST">
+      <class name="check.testng.order.TestClass2">
+        <test-method status="PASS" signature="Test1()[pri:0, instance:check.testng.order.TestClass2@612fc6eb]" name="Test1" duration-ms="5" started-at="2023-11-06T10:03:04 IST" finished-at="2023-11-06T10:03:04 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- relativeLocatorsSelenium4 -->
-        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.amazon.automation.AmazonWebSiteAutomation@42607a4f]" name="closeDriver" is-config="true" duration-ms="1" started-at="2023-10-06T20:53:17 IST" finished-at="2023-10-06T20:53:17 IST">
+        </test-method> <!-- Test1 -->
+      </class> <!-- check.testng.order.TestClass2 -->
+    </test> <!-- Test1 -->
+    <test name="Test2" duration-ms="7" started-at="2023-11-06T10:03:04 IST" finished-at="2023-11-06T10:03:04 IST">
+      <class name="check.testng.order.TestClass2">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:check.testng.order.TestClass2@612fc6eb]" name="beforeSuite" is-config="true" duration-ms="19" started-at="2023-11-06T10:03:04 IST" finished-at="2023-11-06T10:03:04 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeDriver -->
-      </class> <!-- com.amazon.automation.AmazonWebSiteAutomation -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:check.testng.order.TestClass2@612fc6eb]" name="afterSuite" is-config="true" duration-ms="1" started-at="2023-11-06T10:03:04 IST" finished-at="2023-11-06T10:03:04 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- check.testng.order.TestClass2 -->
+      <class name="check.testng.order.TestClass3">
+        <test-method status="PASS" signature="Test1()[pri:0, instance:check.testng.order.TestClass3@6a1aab78]" name="Test1" duration-ms="2" started-at="2023-11-06T10:03:04 IST" finished-at="2023-11-06T10:03:04 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test1 -->
+      </class> <!-- check.testng.order.TestClass3 -->
+    </test> <!-- Test2 -->
+  </suite> <!-- Suite -->
 </testng-results>
