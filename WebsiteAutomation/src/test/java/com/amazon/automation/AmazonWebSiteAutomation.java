@@ -301,8 +301,6 @@ public class AmazonWebSiteAutomation {
 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(30));
 		
 		WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(30), Duration.ofSeconds(20));
-		
-		
 	}
 	
 	@Test
@@ -322,7 +320,8 @@ public class AmazonWebSiteAutomation {
 		
 		WebElement element2 = driver.findElement(RelativeLocator.with(By.id("userEmail")).below(element));
 		
-	//	RelativeLocator.with(By.tagName("input")).above(By.id("password"));
+		
+		//RelativeLocator.with(By.tagName("input")).toLeftOf(element2);
 		
 		if(element2.getAttribute("value")!=null) {
 			System.out.println("hello bro");
