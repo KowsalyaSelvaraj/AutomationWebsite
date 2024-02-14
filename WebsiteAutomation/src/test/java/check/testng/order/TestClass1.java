@@ -34,7 +34,7 @@ public class TestClass1 {
 	}
 
 	@BeforeClass
-	public void beforeClass() {
+	public void beforeClass()  {
 		System.out.println("Before Class 1 ");
 	}
 
